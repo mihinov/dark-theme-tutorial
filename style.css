@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('./theme.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --transition-timing-function: linear;
+  --transition-duration: 0.2s;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+p {
+  margin: 10px 0;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: var(--header-bg-color);
+  color: var(--header-color);
+  padding: 10px 0;
+  
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.main {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  padding: 40px 0;
+  flex: 1;
+
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-color);
+  padding: 40px 0;
+  
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group-radio {
+  user-select: none;
+}
+
+.input-group-radio input[type=radio],
+.input-group-radio label {
+  cursor: inherit;
+}
+
+.input-group-radio label {
+  padding-left: 5px;
+}

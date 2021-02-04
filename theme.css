@@ -1,0 +1,26 @@
+.light-theme {
+  --body-bg-color: inherit;
+  --header-bg-color: rgb(250, 250, 251);
+  --header-color: inherit;
+  --main-bg-color: rgb(132, 239, 255);
+  --main-color: inherit;
+  --footer-bg-color: rgb(249, 249, 255);
+	--footer-color: inherit;
+}
+
+.dark-theme {
+	--body-bg-color: black;
+	--white: rgb(231, 231, 231);
+	--header-bg-color: rgb(0, 0, 0);
+	--header-color: var(--white);
+	--main-bg-color: rgb(37, 82, 88);
+	--main-color: var(--white);
+	--footer-bg-color: rgb(66, 66, 66);
+	--footer-color: var(--white);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    opacity: 0.3;
+  }
+} */
